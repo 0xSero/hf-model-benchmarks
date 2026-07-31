@@ -1,18 +1,21 @@
 # HF Model & Benchmark Matrix
 
-Self-contained, wiki-style dashboard of every major Hugging Face model + variant
-from the last 365 days, benchmark scores, quant/VRAM sizes, and discussions.
+Static, wiki-style site of every major Hugging Face model + variant from the last
+365 days, benchmark scores, quant/VRAM sizes, and discussions. Scraped from Hugging Face.
 
-Data scraped from Hugging Face. This dashboard is a single static `index.html`
-(no external requests, no build step) — served via GitHub Pages.
+Served via GitHub Pages at: **https://0xsero.github.io/hf-model-benchmarks/**
 
 ## Pages
-Open the site at the GitHub Pages URL (see repo settings → Pages, or the link
-in the sidebar once enabled).
+- `index.html` — overview, stats, top benchmarks & orgs
+- `benchmarks.html` — **full matrix: every benchmark (80) × every model variant (10,619)**
+- `models.html` — searchable index of all 10,619 model variants
+- `orgs.html` — all 1,197 providers
+- `models/<id>.html` — one dedicated page per model variant (10,619)
+- `roots/<id>.html` — one page per root model (6,481)
+- `orgs/<id>.html` — one page per provider (1,197)
+- `benchmarks/<slug>.html` — one leaderboard per benchmark (80)
 
-## Source
-Pipeline lives in `huggingface-data/` in the source tree:
-`scrape → fetch cards → link → extract scores → estimate VRAM → discussions → matrix → dashboard`.
+Every model has its own directly-linkable page; all internal cross-links resolve.
 
-Counts (last build): 1,197 providers · 6,481 root models · 10,619 variants ·
-80 benchmarks · 3,267 scores · 36,144 discussions.
+## Counts (last build)
+1,197 providers · 6,481 root models · 10,619 variants · 80 benchmarks · 3,267 scores · 36,144 discussions.
