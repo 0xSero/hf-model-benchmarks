@@ -24262,6 +24262,7 @@ roots/Qwen__Qwen2.5-1.5B--d9621e.html
 roots/meta-llama__Llama-3.2-1B--434db7.html
 roots/deepseek-ai__DeepSeek-R1-Distill-Qwen-14B--8aec04.html
 roots/mistralai__Devstral-Small-2507--d7fab8.html
+roots/mistralai__Mistral-Nemo-Base-2407--940440.html
 roots/nvidia__nemotron-speech-streaming-en-0.6b--c5e417.html
 roots/openai__whisper-small.en--514b5b.html
 roots/Qwen__Qwen2.5-VL-72B-Instruct--92f250.html
@@ -24277,7 +24278,6 @@ roots/Qwen__Qwen2.5-VL-32B-Instruct--ed6c46.html
 roots/Qwen__Qwen2-7B-Instruct--217114.html
 roots/meta-llama__Llama-2-7b-hf--0e7c75.html
 roots/deepseek-ai__DeepSeek-R1-Distill-Llama-70B--5dfc3d.html
-roots/mistralai__Mistral-Nemo-Base-2407--940440.html
 roots/microsoft__Phi-3-mini-4k-instruct--6973cd.html
 roots/microsoft__Phi-4-mini-instruct--7f8321.html
 roots/microsoft__Phi-4-mini-reasoning--694b00.html
@@ -28708,7 +28708,6 @@ roots/baichuan-inc__Baichuan-M2-32B--788b2f.html
 roots/TheDrummer__Tiger-Gemma-9B-v2--4d4f4f.html
 roots/ByteDance-Seed__Seed-Coder-8B-Base--a9a876.html
 roots/ibm-granite__granite-3.1-1b-a400m-base--cf4178.html
-roots/mistralai__Mistral-Nemo-Base-2407   # lightweight student--4a8118.html
 roots/ibm-granite__granite-20b-code-instruct-r1.1--c54c61.html
 roots/ibm-granite__granite-3.1-3b-a800m-base--0c7560.html
 roots/ibm-granite__granite-20b-code-base-8k--35f1ed.html
@@ -32544,6 +32543,7 @@ roots/inclusionAI__Ring-flash-linear-2.0--3a5242.html
 roots/inclusionAI__ASearcher-Web-14B--5a0163.html
 roots/inclusionAI__Ring-flash-linear-2.0-128k--6985f0.html
 roots/inclusionAI__Ring-mini-sparse-2.0-exp--148486.html
+roots/mistralai__Mistral-Nemo-Base-2407   # lightweight student--4a8118.html
 orgs/mradermacher--2640d4.html
 orgs/facebook--cbe648.html
 orgs/bartowski--5cdef0.html
