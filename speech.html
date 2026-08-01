@@ -32,7 +32,7 @@ table.mtx thead th.benchh a{display:block;white-space:normal;word-break:break-wo
 table.mtx thead th .bname{display:block;overflow:hidden;text-overflow:ellipsis}
 table.mtx thead th a{color:inherit;text-decoration:none}
 table.mtx thead th a:hover{color:#8ab4ff;text-decoration:underline}
-table.mtx thead th .bcnt{font-size:9px;font-weight:400;color:#5a6068;font-variant-numeric:tabular-nums;margin-top:1px}
+table.mtx thead th .bcnt{display:block;font-size:9px;font-weight:400;color:#5a6068;font-variant-numeric:tabular-nums;margin-top:2px;opacity:.85}
 table.mtx thead th .srt{float:left;margin-right:3px;color:#5a6068;cursor:pointer;font-size:9px;user-select:none}
 table.mtx thead th.sorted .srt{color:#8ab4ff}
 table.mtx tbody td.benchc{min-width:132px;max-width:150px;width:140px}
@@ -132,7 +132,7 @@ function render(){
    const sc=D.variants.filter(v=>val(v,b.id)!=null).length;
    const arr=state.sortKey===b.id?(state.sortDir<0?"\u25bc":"\u25b2"):"";
    const cls=state.sortKey===b.id?"sorted":"";
-   h+="<th class=\"benchh "+cls+"\" data-k=\""+b.id+"\"><span class=\"srt\" data-k=\""+b.id+"\">"+arr+"</span><a href=\"benchmarks/"+b.id+".html\" onclick=\"event.stopPropagation()\">"+esc(b.name)+"</a><span class=\"bcnt\">"+sc+"</span></th>";
+   h+="<th class=\"benchh "+cls+"\" data-k=\""+b.id+"\"><span class=\"srt\" data-k=\""+b.id+"\">"+arr+"</span><a href=\"benchmarks/"+b.id+".html\" onclick=\"event.stopPropagation()\">"+esc(b.name)+"</a><span class=\"bcnt\">n="+sc+"</span></th>";
  });
  h+="</tr>";
  $("mhead").innerHTML=h;
@@ -142,7 +142,7 @@ function render(){
   let cells="<td class=\"numc\">"+nbench+"</td>";
   for(const b of BCOLS){
    const s=val(v,b.id);
-   cells+= s==null ? "<td class=\"empty\" data-c=\""+b.id+"\"></td>" : "<td class=\"sc\" data-c=\""+b.id+"\">"+s+"</td>";
+   cells+= s==null ? "<td class=\"empty\" data-c=\""+b.id+"\"></td>" : "<td class=\"sc\" data-c=\""+b.id+"\">"+s+"%</td>";
   }
   body+="<tr class=\"rowlink\" data-h=\"models/"+v.h+".html\"><td class=\"modelc\"><a href=\"models/"+v.h+".html\" onclick=\"event.stopPropagation()\">"+hl(v.n,q)+"</a><div class=\"idline\">"+hl(v.id,q)+"</div></td>"+cells+"</tr>";
  }
